@@ -189,7 +189,7 @@ export function submitProduct(type: "update", product: UpdateProduct): string;
 export function submitProduct(type: "create" | "update", product: CreateProduct | UpdateProduct): string {
   if (type === "create") {
     return `新增商品成功：${(product as CreateProduct).title}`;
-  } else {
+  } else  {
     return `更新商品成功：${(product as UpdateProduct).id}`;
   }
 }
